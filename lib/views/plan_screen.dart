@@ -1,5 +1,6 @@
 import '../models/data_layer.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 class PlanScreen extends StatefulWidget {
   const PlanScreen({super.key});
@@ -17,7 +18,10 @@ class _PlanScreenState extends State<PlanScreen> {
     super.initState();
     scrollController = ScrollController()
       ..addListener(() {
-        FocusScope.of(context).requestFocus(FocusNode());
+        if (scrollController.position.userScrollDirection !=
+            ScrollDirection.idle) {
+          FocusScope.of(context).requestFocus(FocusNode());
+        }
       });
   }
 
