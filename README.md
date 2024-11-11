@@ -34,7 +34,7 @@ Setelah diinisialisasi, variabel ini nantinya dapat diperbarui saat pengguna men
 
 Jawab:
 
-https://github.com/febbymathelda/master_plan/blob/main/lib/images/praktikum1.mp4
+![Video GIF](images/praktikum1.gif)
 
 5. Apa kegunaan method pada Langkah 11 dan 13 dalam lifecyle state ?
 
